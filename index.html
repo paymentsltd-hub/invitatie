@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitație Codruța & Nicolae</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'script': ['"Great Vibes"', 'cursive'],
+                        'serif': ['"Cormorant Garamond"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    },
+                    colors: {
+                        'wedding-gold': '#B89B5E',
+                        'wedding-dark': '#2C3E2D',
+                        'wedding-bg': '#F9F8F6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.98);
+            border: 1px solid rgba(184, 155, 94, 0.2);
+        }
+        body { background-color: #f0eee9; }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-md w-full glass-card rounded-t-[100px] rounded-b-3xl shadow-2xl overflow-hidden relative text-center p-6 sm:p-8">
+        
+        <p class="font-sans uppercase tracking-[0.3em] text-[10px] font-bold text-wedding-gold mb-4">
+            Cununia Civilă
+        </p>
+
+        <h1 class="font-script text-5xl text-wedding-dark mb-1">Codruța</h1>
+        <p class="font-serif italic text-2xl text-wedding-gold mb-1">&</p>
+        <h1 class="font-script text-5xl text-wedding-dark mb-6">Nicolae</h1>
+
+        <div class="font-serif text-base text-gray-700 mb-8 px-2">
+            <p>Cu bucurie în suflet, vă invităm să ne fiți alături la cununia noastră civilă.</p>
+            <p class="mt-2 font-semibold text-wedding-dark">Te așteptăm să sărbătorim împreună!</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 mb-8 bg-stone-50 py-6 rounded-2xl border border-stone-100">
+            <div class="flex flex-col items-center">
+                <i data-lucide="calendar" class="w-5 h-5 text-wedding-gold mb-1"></i>
+                <p class="font-sans font-bold text-sm uppercase tracking-widest">10 Iulie 2026</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i data-lucide="clock" class="w-5 h-5 text-wedding-gold mb-1"></i>
+                <p class="font-sans font-bold text-sm uppercase tracking-widest">Ora 20:00</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i data-lucide="map-pin" class="w-5 h-5 text-wedding-gold mb-1"></i>
+                <p class="font-sans font-bold text-sm uppercase tracking-widest">UNIC BALLROOM</p>
+                <p class="font-serif italic text-gray-500 text-sm">Poșta Câlnău, Buzău</p>
+            </div>
+        </div>
+
+        <div class="bg-wedding-dark text-white rounded-xl p-4 mb-8">
+            <p class="font-sans text-[9px] uppercase tracking-widest text-wedding-gold mb-1">Confirmare până la</p>
+            <p class="font-serif text-xl font-bold">25 Iunie 2026</p>
+        </div>
+
+        <div class="flex flex-col gap-3">
+            <a href="https://wa.me/40758044533?text=Buna!%20Confirmam%20cu%20mare%20drag%20prezenta%20la%20cununia%20voastra!%20🥂" 
+               target="_blank"
+               class="flex items-center justify-center gap-2 bg-wedding-gold text-white font-sans font-bold uppercase text-[11px] tracking-widest py-4 rounded-full shadow-md active:scale-95 transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                Confirmă pe WhatsApp
+            </a>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Unic+Ballroom+Posta+Calnau" 
+               target="_blank"
+               class="flex items-center justify-center gap-2 bg-white border-2 border-wedding-dark text-wedding-dark font-sans font-bold uppercase text-[11px] tracking-widest py-4 rounded-full shadow-sm active:scale-95 transition-all">
+                <i data-lucide="navigation" class="w-4 h-4"></i>
+                Locație Google Maps
+            </a>
+        </div>
+
+        <p class="mt-8 font-serif italic text-gray-400 text-xs">Codruța & Nicolae</p>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
